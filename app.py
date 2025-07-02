@@ -1,4 +1,6 @@
 import streamlit as st
+st.write("✅ App started")  # Debug message to check if app is running
+import streamlit as st
 import pickle
 
 # Load the trained model and vectorizer
@@ -31,3 +33,5 @@ if st.button("Classify"):
             st.error("This message is **SPAM**.")
         else:
             st.success("This message is **NOT SPAM**.")
+st.markdown("<h6 style='text-align: center; color: black; font-size: 10px;'>Made by Prince Pandey</h6>", unsafe_allow_html=True)
+
